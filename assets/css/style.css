@@ -29,13 +29,40 @@ a {
 }
 
 .btn {
+    min-width: 205px;
     font-weight: 400;
-    line-height: 1.75;
+    font-size: 1.8rem;
+    font-family: Sora, sans-serif;
+    line-height: 1.67;
     text-align: center;
     color: #FFFFFF;
+    cursor: pointer;
     background: #2E80CE;
     border-radius: 30px;
-    padding: 15px 0;
+    border: 1px solid #2E80CE;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.heading {
+    font-weight: 600;
+    color: var(--header-bg);
+    letter-spacing: -0.02em;
+}
+
+.lv1 {
+    font-size: 7rem;
+    line-height: 1.14;
+    color: #FFFFFF;
+}
+
+.desc {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #C9D2DA;
 }
 
 /* Header */
@@ -109,7 +136,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 42px;
 }
 
 .header-action__login,
@@ -117,6 +143,10 @@ a {
     font-weight: 300;
     line-height: 1.75;
     color: #C9D2DA;
+}
+
+.nav__item .nav__link {
+    padding: 4px 21px;
 }
 
 .nav__item .nav__link--active::before {
@@ -147,5 +177,70 @@ a {
 }
 
 .header-action__signup {
+    min-width: 104px;
+    line-height: 1.75;
+    font-size: 1.6rem;
     padding: 8px 20px;
 }
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 76px;
+}
+
+.hero__content {
+    width: 517px;
+}
+
+.hero__left--desc {
+    margin: 22px 0 38px 0;
+}
+
+.hero-contact {
+    display: flex;
+    align-items: center;
+}
+
+.hero-btn {
+    padding: 15px 46px;
+}
+
+.hero-numberphone {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 38px;
+}
+
+.hero__media {
+    width: 534px;
+}
+
+.hero__images {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero__img {
+    width: 330px;
+    height: 540px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.hero__img:first-child {
+    position: relative;
+    margin-right: -6px;
+}
+
+.hero__img:last-child {
+    width: 210px;
+    height: 410px;
+}
+
