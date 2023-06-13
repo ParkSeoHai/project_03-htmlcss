@@ -12,3 +12,140 @@ body {
     font-size: 1.6rem;
     font-family: 'Sora', sans-serif;
 }
+
+:root {
+    --header-bg: #10375C;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    font-weight: 400;
+    line-height: 1.75;
+    text-align: center;
+    color: #FFFFFF;
+    background: #2E80CE;
+    border-radius: 30px;
+    padding: 15px 0;
+}
+
+/* Header */
+.header {
+    background-color: var(--header-bg);
+    min-height: 100vh;
+    padding-top: 30px;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    font-size: 1rem;
+    display: inline-flex;
+}
+
+.logo__circle {
+    position: relative;
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    margin-right: 0.6em;
+}
+
+.logo__circle::before,
+.logo__circle::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.logo__circle::before {
+    width: 3em;
+    height: 3em;
+    background: #2E80CE;
+}
+
+.logo__circle::after {
+    width: 1.6em;
+    height: 1.6em;
+    right: 0.3em;
+    bottom: 0.3em;
+    background: #FFFFFF;
+}
+
+.logo__text {
+    display: inline-block;
+}
+
+.logo__brand {
+    display: block;
+    font-family: Sora, sans-serif;
+    font-size: 1.8em;
+    font-weight: 400;
+    color: #fff;
+    text-align: right;
+}
+
+.logo__brand--small {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Navigation */
+.nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
+
+.header-action__login,
+.nav__item .nav__link {
+    font-weight: 300;
+    line-height: 1.75;
+    color: #C9D2DA;
+}
+
+.nav__item .nav__link--active::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translateY(-50%);
+}
+
+.nav__item .nav__link--active,
+.nav__item .nav__link:hover {
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+/* Actions */
+.header-action {
+    display: flex;
+    align-items: center;
+}
+
+.header-action__login {
+    margin-right: 28px;
+}
+
+.header-action__signup {
+    padding: 8px 20px;
+}
